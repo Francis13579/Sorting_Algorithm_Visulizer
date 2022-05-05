@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sorting Algorithm Visulizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a
+        class="col-auto center label"
+        href="#"
+        style="font-size: larger; color: aqua"
+        >SORTING ALGORITHM VISULIZER</a
+      >
+
+      <div>
+        <div class="col-auto center" id="control panel">
+          <div
+            class="button-group-md"
+            style="margin-right: 5px; margin-top: 5px"
+          >
+            <button type="button" class="btn bubbleSort">Bubble Sort</button>
+            <button type="button" class="btn insertionSort">
+              Insertion Sort
+            </button>
+            <button type="button" class="btn selectionSort">
+              Selection Sort
+            </button>
+            <button type="button" class="btn mergeSort">Merge Sort</button>
+            <button type="button" class="btn quickSort">Quick Sort</button>
+          </div>
+        </div>
+        <div
+          class="btn-group btn-group-horizontal center"
+          style="margin-bottom: 30px"
+        >
+          <button
+            type="button"
+            class="btn new"
+            style="margin-right: 5px; margin-top: 20px"
+          >
+            New Array
+          </button>
+          <button
+            type="button"
+            class="btn stop"
+            style="margin-left: 5px; margin-top: 20px"
+          >
+            Stop Sorting
+          </button>
+        </div>
+      </div>
+      <div class="col-auto center" id="control panel">
+        <div id="input-panel">
+          <span id="size" class="label"
+            >SIZE
+            <input
+              id="size_input"
+              type="range"
+              value="50"
+              min="1"
+              max="100"
+              style="margin-left: 20px"
+            />
+          </span>
+        </div>
+        <div id="input-panel">
+          <span id="speed" class="label"
+            >SPEED
+            <input
+              id="speed_input"
+              type="range"
+              min="20"
+              max="300"
+              value="60"
+              style="margin-left: 20px"
+            />
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div id="sorting" class="flex-container"></div>
+    <nav class="navbar">
+      <div class="col-auto center label" style="color: aqua">
+        Created by Anjon Francis Costa
+      </div>
+    </nav>
+    <script src="sort.js" async defer></script>
+    <script src="app/bubble.js" async defer></script>
+    <script src="app/insertion.js" async defer></script>
+    <script src="app/selection.js" async defer></script>
+    <script src="app/merge.js" async defer></script>
+    <script src="app/quick.js" async defer></script>
+  </body>
+</html>
